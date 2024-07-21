@@ -10,7 +10,7 @@ fn main() {
     let mut rng = rand::thread_rng();
     let assets = vec!['し', 'か', 'の', 'こ', 'の', 'こ', 'の', 'こ', 'こ', 'し', 'た', 'ん', 'た', 'ん'];
 
-    let mut count: u64 = 0;
+    let mut count: u32 = 0;
     let start = std::time::Instant::now();
     loop {
         count += 1;

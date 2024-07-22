@@ -8,7 +8,8 @@ fn enter_end() {
 
 fn main() {
     let mut rng = rand::thread_rng();
-    let assets = vec!['し', 'か', 'の', 'こ', 'の', 'こ', 'の', 'こ', 'こ', 'し', 'た', 'ん', 'た', 'ん'];
+    let text = String::from("しかのこのこのここしたんたん");
+    let assets: Vec<char> = text.chars().collect();
 
     let mut count: u32 = 0;
     let start = std::time::Instant::now();
@@ -19,7 +20,7 @@ fn main() {
         if count % 5000 == 0 {
             println!("{}, {}", result, count);
         }
-        if result == "しかのこのこのここしたんたん" {
+        if result == text {
             println!("{}, {}", result, count);
             break;
         }

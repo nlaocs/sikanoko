@@ -20,7 +20,7 @@ fn main() {
         if count % 5000 == 0 {
             println!("{}, {}", result, count);
         }
-        if result == "しかのこのこのここしたんたん" {
+        if result == text {
             println!("{}, {}", result, count);
             break;
         }
